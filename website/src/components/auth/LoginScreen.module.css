@@ -1,0 +1,448 @@
+/* ======================================================
+   Login Screen — Pure Crisp White Theme
+   Human Graphic Designer aesthetics: crisp, legible & structured
+   ====================================================== */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fafc;
+    padding: 24px 16px;
+    font-family: var(--font-family-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 36px 32px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    transition: all 0.25s ease;
+}
+
+.cardWide {
+    max-width: 540px;
+}
+
+/* ---- Brand Header ---- */
+.brandHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.logoBadge {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.brandTitle {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: 0.05em;
+    margin: 0 0 4px 0;
+}
+
+.brandSubtitle {
+    font-size: 13px;
+    font-weight: 500;
+    color: #059669;
+    margin: 0;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ---- Quick Access Demo Block ---- */
+.quickAccessCard {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quickAccessHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.quickBadge {
+    font-size: 11px;
+    font-weight: 700;
+    color: #059669;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.quickSub {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.quickBtnGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.quickBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quickBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.quickBtnPatient {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+}
+
+.quickBtnDoctor {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+}
+
+.quickIcon {
+    font-size: 18px;
+}
+
+.quickText {
+    display: flex;
+    flex-direction: column;
+}
+
+.quickRole {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.quickName {
+    font-size: 11px;
+    color: #475569;
+}
+
+/* ---- Role Tabs ---- */
+.roleTabs {
+    display: flex;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    gap: 4px;
+}
+
+.roleTab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.roleTabActive {
+    background: #ffffff;
+    color: #0f172a;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+/* ---- Form Controls ---- */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fieldLabel {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.stdInput {
+    width: 100%;
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    box-sizing: border-box;
+}
+
+.stdInput:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
+}
+
+.cardInputWrapper {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 10px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cardInputWrapper:focus-within {
+    border-color: #059669;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
+}
+
+.cardPrefix {
+    padding: 12px 14px;
+    background: #f8fafc;
+    color: #059669;
+    font-weight: 700;
+    font-size: 15px;
+    border-right: 1.5px solid #cbd5e1;
+    user-select: none;
+    font-family: monospace;
+}
+
+.cardInput {
+    flex: 1;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: #0f172a;
+    background: transparent;
+}
+
+.fieldHint {
+    font-size: 11px;
+    color: #64748b;
+    margin: 4px 0 0 0;
+}
+
+.primaryBtn {
+    width: 100%;
+    padding: 12px;
+    background: #059669;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.primaryBtn:hover:not(:disabled) {
+    background: #047857;
+}
+
+.primaryBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ---- Step Pills ---- */
+.stepsBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    background: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #f1f5f9;
+}
+
+.stepPill {
+    font-size: 12px;
+    font-weight: 600;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stepPillActive {
+    color: #059669;
+}
+
+.stepNum {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.stepPillActive .stepNum {
+    background: #059669;
+    color: #ffffff;
+}
+
+.stepDivider {
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 0 10px;
+}
+
+/* ---- OTP Grid ---- */
+.otpGrid {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.otpBox {
+    width: 44px;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    color: #0f172a;
+}
+
+.otpBox:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
+}
+
+.devOtpBanner {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #166534;
+    text-align: center;
+    margin: 0;
+}
+
+.countdownText {
+    text-align: center;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* ---- Footer Links ---- */
+.switchRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.switchLink {
+    background: none;
+    border: none;
+    color: #059669;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.switchLink:hover {
+    text-decoration: underline;
+}
+
+.errorBanner {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.twoCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.emergencyWrapper {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.emergencyDivider {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.emergencyDivider span {
+    font-size: 10px;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 0.08em;
+}
+
+.emergencyButton {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    border: 1.5px solid #ef4444;
+    color: #dc2626;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.emergencyButton:hover {
+    background: #fef2f2;
+}
